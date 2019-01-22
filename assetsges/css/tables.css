@@ -1,0 +1,296 @@
+
+
+.table {
+	clear: both;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.dataTables_empty {
+  text-align: center;
+}
+
+td.details {
+  background-color: #FFFFFF;
+  border-bottom: 1px solid #CCCCCC;
+  border-top: 1px solid #CCCCCC;
+}
+
+
+/*table tbody tr.row_selected td */
+
+.dataTables_wrapper .top {
+	padding: 5px 10px;
+	/*background: url("../images/tables/table-head-bg.png") repeat-x scroll top left #dddddd;*/
+	background-image: url(../images/escheresque.png);
+	border-top: 2px solid #CCCCCC;
+	border-bottom: 1px solid #CCCCCC;
+	margin-top: 10px;
+	height: 28px;
+}
+
+.dataTables_wrapper .block-actions {
+	margin-top: 0;
+	line-height: 35px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.dataTables_wrapper {
+	position: relative;
+	margin: -9px -10px 0 -10px;
+	clear: both;
+	zoom: 1; /* Feeling sorry for IE */
+}
+
+.dataTables_length {
+	float: left;
+	padding-left: 100px;
+}
+/*
+.dataTables_length div.selector {
+	width: 70px !important;
+}
+*/
+.dataTables_length div.selector span {
+	width: 70px !important;
+}
+
+.dataTables_length label {
+	margin-left: -100px;
+}
+
+.dataTables_filter {
+	float: right;
+	text-align: right;
+	padding-left: 100px;
+}
+
+.dataTables_filter label {
+	margin-left: -100px;
+}
+
+.dataTables_filter input {
+	margin-left: 5px;
+	width: 150px;
+}
+
+.dataTables_info {
+	float: left;
+}
+
+.dataTables_paginate {
+	float: right;
+	color: #000000;
+}
+
+.paging_full_numbers {
+	color: #000000;
+}
+
+tfoot {  display: table-header-group; background: url("../images/tables/table-head-bg.png") repeat-x scroll top left #dddddd; border-bottom: 1px solid #bcbcbc; }
+
+.block-actions { border-top: 1px solid #CCCCCC; background-color: #0066FF; border-bottom: 1px solid #bcbcbc; }
+
+
+.table thead {
+	/*background: url("../images/tables/table-head-bg.png") repeat-x scroll top left #dddddd;*/
+	background-color: #EAEAEA;
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #bcbcbc;
+}
+
+.table thead th:first-child {
+	border-left: none;
+}
+
+.table thead th:last-child {
+	border-right: none;
+}
+
+.table thead th {
+	vertical-align: middle;
+	text-align: left;
+	padding: 8px 13px;
+	border-left: 1px solid #fff;
+	border-right: 1px solid #c3c3c3;
+	cursor: pointer;
+}
+
+.table tbody th, .table tbody td{
+	vertical-align: top;
+	text-align: left;
+	padding: 7px;
+	border-left: 1px dotted #bebebe;
+}
+
+  .table tfoot th, .table tfoot td {
+	vertical-align: top;
+	text-align: center;
+	padding: 7px;
+	border-left: 1px dotted #bebebe;
+}
+
+.table tbody td {
+	background: #f2f2f2;
+	height: 5px;
+}
+
+.table tbody th:first-child, .table tbody .th:first-child, .table tbody td:first-child, .table tfoot th:first-child, .table tfoot td:first-child {
+	border-left: none;
+}
+
+.table tbody tr.even td {
+	background: #FFFFFF;
+}
+
+.table tbody tr:hover th, .table tbody tr:hover .th, .table tbody tr:hover td {
+	background: #d8dce6;
+}
+
+/* Select */
+
+.table tbody tr.row_selected td {
+  background-image: url(../images/escheresque.png);
+  border-top: 1px solid #bcbcbc;
+  border-bottom: 1px solid #bcbcbc;
+  font-weight:bold;
+  
+}
+.table tbody tr.odd.row_selected td {
+  background-image: url(../images/escheresque.png);
+  border-top: 1px solid #bcbcbc;
+  border-bottom: 1px solid #bcbcbc;
+  font-weight:bold;
+}
+
+
+
+
+/* ==================================================
+ * 2) Pagination Buttons
+ * ================================================== */
+
+.dataTables_paginate {
+	float: right;
+}
+
+.DTTT_print_info {
+	z-index: 999;
+}
+
+.paginate_button {
+	box-shadow: inset 0 1px 0 rgba(255,255,255,0.42);
+	color: #000000;
+}
+
+.paginate_button.previous, .paginate_button.next {
+	display: none;
+}
+
+
+.with-prev-next .paginate_button.previous, .with-prev-next .paginate_button.next {
+	display: inline;
+}
+
+.paginate_button, .paginate_active {
+	padding: 3px 7px;
+	cursor: default;
+	color: #000000;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.paginate_button, .paginate_active {
+	border-top: 1px solid #c1c1c1;
+	border-bottom: 1px solid #c1c1c1;
+	border-right: 1px solid #c1c1c1;
+	border-left: 0px solid #c1c1c1;
+	background: url('../img/elements/table/pagination/normal.png') repeat-x #dfdfdf;
+}
+
+.paginate_active {
+	background: url('../img/elements/table/pagination/active.png') repeat-x #394353;
+	border-color: #101a2a;
+	color: #FFFFFF;
+}
+
+.paginate_button:hover {
+	background: url('../img/elements/table/pagination/hover.png') repeat-x #1c68c0;
+	border-left-width: 1px;
+	border-color: #13447d;
+	margin-left: -1px;
+	
+	cursor: pointer;
+}
+
+.paginate_button_disabled, .paginate_button_disabled:hover {
+	background: url('../img/elements/table/pagination/disabled.png') repeat-x #dfdfdf;
+	border-color: #c1c1c1;
+	cursor: default;
+}
+
+.paginate_button:not(.paginate_button_disabled):hover:active {
+	border-color: #13447d;
+	box-shadow: inset 0 1px 1px rgba(0,0,0,0.59);
+	background: #175093;
+}
+
+.paginate_button.first {
+	border-left-width: 1px;
+	border-radius: 2px 0 0 2px;
+}
+
+.paginate_button.last {
+	border-radius: 0 2px 2px 0;
+}
+
+
+
+
+
+
+/* ==================================================
+ * 3) Sort Icons
+ * ================================================== */
+
+.sorting_asc {
+	background: url('../images/tables/arrow-asc.png') no-repeat center right;
+}
+
+.sorting_desc {
+	background: url('../images/tables/arrow-desc.png') no-repeat center right;
+}
+
+.sorting {
+	background: url('../images/tables/arrow-both.png') no-repeat center right;
+}
+
+.sorting_asc_disabled {
+	background: none;
+}
+
+.sorting_desc_disabled {
+	background: none;
+}
+
+/*
+ * Sorting
+ */
+table.dataTable thead th div.DataTables_sort_wrapper {
+	position: relative;
+	padding-right: 20px;
+}
+
+table.dataTable thead th div.DataTables_sort_wrapper span {
+	position: absolute;
+	top: 50%;
+	margin-top: -8px;
+	right: 0;
+}
+
+table.dataTable th:active {
+	outline: none;
+}
